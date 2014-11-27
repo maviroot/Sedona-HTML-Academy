@@ -3,13 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Седона - Главная страница</title>
+	<link rel="stylesheet" href="normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-	    <div class="l-center-wrapper">
-            <div class="head-logo"><a href="#"></a></div>
+        <div class="l-center-wrapper">
             <ul class="head-nav">
                 <li><a href="#">Инфорация</a></li>
                 <li><a href="#">Фото и видео</a></li>
@@ -20,8 +20,8 @@
         </div>
 	</header>
     <div class="content">
-	    <div class="l-center-wrapper">
-           <img src="img/cont-bg.jpg" alt="">
+        <div class="l-center-wrapper">
+           <!--  <img src="img/cont-bg.jpg" alt=""> -->
             <div class="welcome">
                 <p>
                     <span class="welcome-sign">Welcome</span><br>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="reason reason2">
-                <div class="col1-2">
+                <div class="col col1-2">
                     <img src="http://placehold.it/800x256" alt="Мост дьявола">
                 </div>
                 <div class="col2-1">
@@ -72,45 +72,47 @@
                     <p class="reas-num">№2</p>
                     <p class="reas-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
-                <ul class="more-features">
-                    <li>
-                        <p class="feature-title">Небольшая площадь</p>
-                        <p class="feature-num">№3</p>
-                        <p class="feature-desc">Все достопремечательности находятся очень близко</p>
-                    </li>
-                    <li>
-                        <p class="feature-title">Красивая дорога</p>
-                        <p class="feature-num">№4</p>
-                        <p class="feature-desc">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-                    </li>
-                    <li>
-                        <p class="feature-title">Мало туристов</p>
-                        <p class="feature-num">№5</p>
-                        <p class="feature-desc">Большинство едет в Гранд Каньон и толпится там</p>
-                    </li>
-                </ul>
+                <div class="more-features">
+                    <ul>
+                        <li>
+                            <p class="feature-title">Небольшая площадь</p>
+                            <p class="feature-num">№3</p>
+                            <p class="feature-desc">Все достопремечательности находятся очень близко</p>
+                        </li>
+                        <li>
+                            <p class="feature-title">Красивая дорога</p>
+                            <p class="feature-num">№4</p>
+                            <p class="feature-desc">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+                        </li>
+                        <li>
+                            <p class="feature-title">Мало туристов</p>
+                            <p class="feature-num">№5</p>
+                            <p class="feature-desc">Большинство едет в Гранд Каньон и толпится там</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="hotels-preface">
+                <p class="hotel-title">Заинтересовались?</p>
+                <p class="hotel-offer">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            </div>
+            <form class="hotel-search-form">
+                <div class="form-title">Поиск гостиницы в Седоне</div>
+                <div class="arg">
+                    <input type="date" name="" id=""><br>
+                    <input type="date" name="" id=""><br>
+                    <input type="number" name="" id="">
+                    <input type="number" name="" id="">
+                    <input type="submit" value="">
+                </div>
+            </form>
             <div class="map">
                 <img src="http://placehold.it/1200x593" alt="Карта">
-            </div>
-            <div class="hotels">
-                <p class="hotel-call">Заинтересовались?</p>
-                <p class="hotel-offer">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <form class="hotel-search-form">
-                    <div class="form-title">Поиск гостиницы в Седоне</div>
-                    <div class="arg">
-                        <input type="date" name="" id=""><br>
-                        <input type="date" name="" id=""><br>
-                        <input type="number" name="" id="">
-                        <input type="number" name="" id="">
-                        <input type="submit" value="">
-                    </div>
-                </form>
             </div>
         </div>
     </div>
 	<footer>
-	    <div class="l-center-wrapper">
+        <div class="l-center-wrapper">
             <p class="foot-tag">#visitsedona</p>
             <ul class="foot-social">
                 <li><a href="#" class="twitter-icon"></a></li>

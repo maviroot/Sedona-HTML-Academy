@@ -1,4 +1,4 @@
-html, body, p{
+html, body{
     padding: 0;
     margin: 0;
 }
@@ -7,6 +7,7 @@ body{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    background: url("img/cont-bg.jpg") 50% 0 no-repeat;
 }
 
 .l-center-wrapper{
@@ -21,11 +22,14 @@ body{
     clear: both;
 }
 
+header{
+    background: #fff;
+}
+
 header .head-nav{
     list-style: none;
     padding: 0;
     margin: 0;
-    outline: 2px dotted black; 
 }
 
 header .head-nav li{
@@ -49,3 +53,32 @@ header .head-nav li{
 .content{
     //background: url("img/cont-bg.jpg") 0 0 no-repeat;
 }
+
+.col1-1{
+    width: 33%;
+    float: left;
+}
+
+.col2-2{
+    width: 66%;
+}
+
+.features ul li{
+    float: left;
+    width: 33%;
+}
+
+.col1-2{
+    width: 66%;
+    float: left;
+}
+
+.col2-1{
+    width: 33%;
+}
+
+.more-features ul li{
+    float: left;
+    width: 33%;
+}
+
