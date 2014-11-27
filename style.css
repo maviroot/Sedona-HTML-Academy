@@ -1,0 +1,51 @@
+html, body, p{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.l-center-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.l-center-wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header .head-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    outline: 2px dotted black; 
+}
+
+header .head-nav li{
+    float: left;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.head-nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+.head-nav a:hover,
+.head-nav a:active{
+    color: #000;
+}
+
+.content{
+    //background: url("img/cont-bg.jpg") 0 0 no-repeat;
+}
