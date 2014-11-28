@@ -1,13 +1,13 @@
 /*    General Css    */
 
-html, body{
+html, body, p, div, ul{
     padding: 0;
     margin: 0;
 }
 
 body{
     font-size: 14px;
-    line-height: 26px;
+    line-height: 21px;
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
 }
@@ -96,7 +96,6 @@ header .head-nav li{
 
 .intro .welcome-sign{
     margin: auto;
-
     width: 188px;
 }
 
@@ -120,7 +119,6 @@ header .head-nav li{
 
 .sedona-preface{
     margin: auto;
-    margin-top: 80px;
     padding: 55px;
 }
 
@@ -128,33 +126,53 @@ header .head-nav li{
     font-weight: bold;
     text-align: center;
     font-size: 21px;
-}
-
-.sedona-reasons{
-    text-align: center;
+    margin-bottom: 35px;
 }
 
 .reason{
     color: #fff;
+    height: 256px;
 }
 
 .col1-1{
-    width: 33%;
+    width: 33.333%;
     float: left;
+}
+
+.col1-2{
+    width: 66.666%;
+    float: left;
+}
+
+.reason .col1-1{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #81b3d2;
+    height: 100%;
+    padding: 50px;
+}
+
+.col1-1 .reas-title{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.col1-1 .reas-num{
+    padding: 15px 0 21px;
+}
+
+.features ul{
+    list-style: none;
 }
 
 .features ul li{
     float: left;
-    width: 33%;
+    width: 33.333%;
 }
 
-.col1-2{
-    width: 66%;
+.more-res ul li{
     float: left;
+    width: 33.333%;
 }
-
-.more-features ul li{
-    float: left;
-    width: 33%;
-}
-
