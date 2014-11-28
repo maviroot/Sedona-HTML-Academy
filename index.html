@@ -3,35 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Седона - Главная страница</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-        <div class="l-center-wrapper">
-            <ul class="head-nav">
-                <li><a href="#">Инфорация</a></li>
+    <div class="wrapper">
+        <header>
+            <ul class="head-nav clearfix">
+                <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
-                <li><a href="#"></a>a</li>
+                <li class="main-logo"><a href="#"><img src="img/main-logo.png" alt=""></a></li>
                 <li><a href="#">Карта штата</a></li>
                 <li><a href="#">Гостиницы</a></li>
             </ul>
-        </div>
-	</header>
-    <div class="content">
-        <div class="l-center-wrapper">
-           <!--  <img src="img/cont-bg.jpg" alt=""> -->
-            <div class="welcome">
-                <p>
-                    <span class="welcome-sign">Welcome</span><br>
-                    <span class="welcome-sign-dash">to the gorgeous</span>
-                </p>
-                <p class="wel-title">Sedona</p>
-                <p class="wel-because">"Because the Grand Canyon sucks"</p>
+        </header>
+        <div class="content">
+             <!--  <img src="img/Welcome.png" alt="" class="welcome-sign"> -->
+            <div class="intro">
+                <div class="welcome-sign"><img src="img/Welcome.png" alt=""></div>
+                <div class="welcome-sign-dash"><img src="img/ttgor.png" alt=""></div>
+                <div class="wel-title"><img src="img/Sedona.png" alt=""></div>
+                <div class="wel-because"><img src="img/Because-the-Grand--Canyon-sucks.png" alt=""></div>
             </div>
             <div class="sedona-preface">
-                    <p class="sedona-merit">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+                    <p class="sedona-merit">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
                     <p class="sedona-reasons">Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
             </div>
             <div class="reason reason1">
@@ -40,9 +35,7 @@
                     <p class="reas-num">№1</p>
                     <p class="reas-desc">Седона не атракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <div class="col2-2">
-                    <img src="http://placehold.it/800x256" alt="Настоящий городок">
-                </div>
+                <img class="col1-2" src="http://placehold.it/800x256" alt="Настоящий городок">
                 <div class="features">
                     <ul>
                         <li>
@@ -64,10 +57,8 @@
                 </div>
             </div>
             <div class="reason reason2">
-                <div class="col col1-2">
-                    <img src="http://placehold.it/800x256" alt="Мост дьявола">
-                </div>
-                <div class="col2-1">
+                <img class="col1-2" src="http://placehold.it/800x256" alt="Мост дьявола">
+                <div class="col1-1">
                     <p class="reas-title">Там есть мост дьявола</p>
                     <p class="reas-num">№2</p>
                     <p class="reas-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -110,9 +101,7 @@
                 <img src="http://placehold.it/1200x593" alt="Карта">
             </div>
         </div>
-    </div>
-	<footer>
-        <div class="l-center-wrapper">
+        <footer>
             <p class="foot-tag">#visitsedona</p>
             <ul class="foot-social">
                 <li><a href="#" class="twitter-icon"></a></li>
@@ -120,7 +109,7 @@
                 <li><a href="#" class="youtube-icon"></a></li>
             </ul>
             <p class="copyright">Website by <a href=""></a> for <a href=""></a></p>
-        </div>
-	</footer>
+        </footer>
+    </div>
 </body>
 </html>
