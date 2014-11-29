@@ -10,6 +10,7 @@ body{
     line-height: 21px;
     font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
+    background: #f2f2f2;
 }
 
 .wrapper{
@@ -18,7 +19,8 @@ body{
     margin: 0 auto;
     padding: 0;
     box-shadow: 0 0 10px 0 #c8c8c8;
-       text-align: center;
+    text-align: center;
+    background: #fff;
 }
 
 .wrapper:after {
@@ -142,6 +144,8 @@ header .head-nav li{
 .col1-2{
     width: 66.666%;
     float: left;
+    height: 256px;
+    overflow: hidden;
 }
 
 .reason .col1-1{
@@ -162,6 +166,13 @@ header .head-nav li{
 .col1-1 .reas-num{
     padding: 15px 0 21px;
 }
+.col1-2 img{
+    width: 100%;
+}
+
+.features{
+    height: 330px;
+}
 
 .features ul{
     list-style: none;
@@ -170,9 +181,74 @@ header .head-nav li{
 .features ul li{
     float: left;
     width: 33.333%;
+    height: 100%;
+    padding: 0 50px;
+    padding-top: 55px;
+    padding-bottom: 71px;
+    box-sizing: border-box;
+}
+
+.features .feature-title{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.more-res{
+    //height: 256px;
+    background: #eeeeee;
+}
+
+.more-res ul{
+    list-style: none;
 }
 
 .more-res ul li{
+    box-sizing: border-box;
+    padding: 50px 71px;
     float: left;
     width: 33.333%;
+}
+
+.more-res .feature-title{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.more-res .feature-desc{
+    margin-top: 25px;
+}
+
+.hotels-preface{
+    padding: 0 380px;
+    padding-top: 58px;
+    padding-bottom: 130px;
+}
+
+.hotels-preface .hotel-title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 26px;
+}
+
+.hotels-preface .hotel-offer{
+    line-height: 24px;
+}
+
+.map{
+    height: 473px;
+    overflow: hidden;
+}
+
+/*    Footer    */
+
+footer .col{
+    width: 33%;
+    display: inline-block;
 }
