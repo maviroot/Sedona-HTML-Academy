@@ -1,67 +1,74 @@
 /*    General Css    */
 
 html, body, p, div, ul{
-    padding: 0;
     margin: 0;
+
+    padding: 0;
 }
 
 body{
-    font-size: 14px;
-    line-height: 21px;
-    font-family: 'PT Sans', sans-serif;
-    text-transform: uppercase;
     background: #f2f2f2;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 21px;
 }
 
 .wrapper{
-    min-width: 768px;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
+
+    min-width: 768px;
+    max-width: 1200px;
+    background: #fff;
     box-shadow: 0 0 10px 0 #c8c8c8;
     text-align: center;
-    background: #fff;
 }
 
 .wrapper:after {
-    content: '';
     display: table;
     clear: both;
+
+    content: '';
 }
 
 .clearfix:after {
-    content: "";
     display: table;
     clear: both;
+
+    content: "";
 }
 
 /*    Header    */
 
 header{
-    background: #fff;
-    height: 56px;
     position: relative;
     z-index: 10;
+    height: 56px;
+
+    background: #fff;
 }
 
 header .head-nav{
-    list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
 header .head-nav li{
     float: left;
-    width: 20%;
     padding: 0;
+    width: 20%;
 }
 
 .head-nav a{
     display: block;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
     padding: 15px 0;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .main-logo a{
@@ -82,22 +89,24 @@ header .head-nav li{
 /*    Content    */
 
 .intro{
+    position: relative;
+    padding: 65px 0;
+
     background: url("img/cont-bg.jpg") 0 0 no-repeat;
     background-size: cover;
-    padding: 65px 0;
-    position: relative;
 }
 
 .intro:after{
-    content: "";
-    display: table;
     position: absolute;
-    left: 0px;
     bottom: 0px;
+    left: 0px;
+    display: table;
     width: 100%;
     height: 60px;
     background: url("img/image-white.png") 0 100% no-repeat;
     background-size: contain;
+
+    content: "";
 }
 
 .intro .welcome-sign{
@@ -106,21 +115,24 @@ header .head-nav li{
 }
 
 .welcome-sign-dash{
-    width: 256px;
     margin: auto;
     margin-top: 10px;
+
+    width: 256px;
 }
 
 .wel-title{
-    width: 458px;
     margin: auto;
     margin-top: 50px;
+
+    width: 458px;
 }
 
 .wel-because{
-    width: 296px;
     margin: auto;
     margin-top: 55px;
+
+    width: 296px;
 }
 
 .sedona-preface{
@@ -129,41 +141,46 @@ header .head-nav li{
 }
 
 .sedona-merit{
-    font-weight: bold;
-    text-align: center;
-    font-size: 21px;
     margin-bottom: 35px;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 21px;
 }
 
 .reason{
-    color: #fff;
     height: 256px;
+
+    color: #fff;
 }
 
 .col1-1{
-    width: 33.333%;
     float: left;
+
+    width: 33.333%;
 }
 
 .col1-2{
-    width: 66.666%;
     float: left;
-    height: 256px;
     overflow: hidden;
+
+    width: 66.666%;
+    height: 256px;
 }
 
 .reason .col1-1{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: #81b3d2;
-    height: 100%;
     padding: 50px;
+    height: 100%;
+    background: #81b3d2;
 }
 
 .col1-1 .reas-title{
-    font-size: 21px;
     font-weight: bold;
+
+    font-size: 21px;
     line-height: 26px;
 }
 
@@ -184,25 +201,26 @@ header .head-nav li{
 
 .features ul li{
     float: left;
-    width: 33.333%;
-    height: 100%;
+    box-sizing: border-box;
     padding: 0 50px;
     padding-top: 55px;
     padding-bottom: 50px;
-    box-sizing: border-box;
+    width: 33.333%;
+    height: 100%;
 }
 
 .features .feature-title{
     margin-top: 30px;
     margin-bottom: 25px;
+    font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
 }
 
 .more-res{
-    //height: 256px;
     background: #eeeeee;
+
+    //height: 256px;
 }
 
 .more-res ul{
@@ -210,17 +228,20 @@ header .head-nav li{
 }
 
 .more-res ul li{
+    float: left;
+
     box-sizing: border-box;
     padding: 50px 71px;
-    float: left;
     width: 33.333%;
 }
 
 .more-res .feature-title{
+    margin-bottom: 15px;
+
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    margin-bottom: 15px;
+
     //padding-left: 70px;
     //padding-right: 70px;
 }
@@ -239,10 +260,11 @@ header .head-nav li{
 }
 
 .hotels-preface .hotel-title{
+    text-align: center;
+
     font-weight: bold;
     font-size: 30px;
     line-height: 26px;
-    text-align: center;
 }
 
 .hotels-preface .hotel-offer{
@@ -250,26 +272,28 @@ header .head-nav li{
 }
 
 .map{
-    height: 473px;
     overflow: hidden;
+
+    height: 473px;
 }
 
 .hotel-search-form{
     position: absolute;
-    background: #fff;
-    width: 568px;
-    //min-height: 200px;
     top: 173px;
     left: 50%;
     margin-left: -285px;
+    width: 568px;
+    background: #fff;
+
+    //min-height: 200px;
 }
 
 .hotel-search-form .form-title{
     padding: 34px 0;
     background: #766357;
     color: #fff;
-    font-size: 21px;
     font-weight: bold;
+    font-size: 21px;
     line-height: 26px;
 }
 
@@ -287,23 +311,25 @@ header .head-nav li{
 }
 
 .hotel-search-form input{
-    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 30px;
+    border: 0px;
+    background: #f2f2f2;
     text-transform: uppercase;
     font-weight: bold;
-    background: #f2f2f2;
-    border: 0px;
-    margin-bottom: 30px;
+
+    font-family: 'PT Sans', sans-serif;
 }
 .hotel-search-form input:last-child{
     margin-bottom: 0;
 }
 
 .hotel-search-form input[type="date"]{
-    //display: block;
     box-sizing: border-box;
+    padding: 14px;
     width: 346px;
     height: 38px;
-    padding: 14px;
+
+    //display: block;
 }
 
 .hotel-search-form input[type="number"]{
@@ -313,10 +339,10 @@ header .head-nav li{
 
 .hotel-search-form input[type="submit"]{
     display: block;
-    margin: auto;
-    border 0px;
     box-sizing: border-box;
+    margin: auto;
     padding: 20px 197px;
+    border: 0px;
     background: #81b3d2;
     color: #fff;
     font-size: 21px;
@@ -338,16 +364,19 @@ footer{
 }
 
 footer .col{
-    width: 33%;
-    //display: inline-block;
     float: left;
+
+    width: 33%;
+
+    //display: inline-block;
 }
 
 footer .foot-tag{
-    font-size: 21px;
-    line-height: 26px;
     padding-top: 50px;
     font-weight: bold;
+
+    font-size: 21px;
+    line-height: 26px;
 }
 
 footer .btn-social{
@@ -363,13 +392,12 @@ footer .footer-social{
 
 .footer-social a.twitter-icon{
     background: url(img/social-icons.png) 0 0 no-repeat;
-
-}.footer-social a.fb-icon{
+}
+.footer-social a.fb-icon{
     background: url(img/social-icons.png) -52px 0 no-repeat;
-
-}.footer-social a.youtube-icon{
+}
+.footer-social a.youtube-icon{
     background: url(img/social-icons.png) -104px 0 no-repeat;
-
 }
 
 footer .copyright{
@@ -381,16 +409,16 @@ a.block-copyright{
 }
 footer .copyright a.glukhanko{
     display: inline-block;
-    background: url(img/copyright.png) 0 0 no-repeat;
     width: 27px;
     height: 30px;
+    background: url(img/copyright.png) 0 0 no-repeat;
     vertical-align: middle;
 }
 
 footer .copyright a.htmlacademy{
     display: inline-block;
-    background: url(img/copyright.png) -76px 0 no-repeat;
     width: 27px;
     height: 33px;
+    background: url(img/copyright.png) -76px 0 no-repeat;
     vertical-align: middle;
 }
