@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Седона - Главная страница</title>
+	<!-- <base href="http://barbershop-borodinski.ru/suppes/sedona/"> -->
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -32,7 +33,7 @@
             <div class="reason clearfix">
                 <div class="col1-1">
                     <p class="reas-title">Настоящий<br>городок</p>
-                    <p class="reas-num">- №1-</p>
+                    <p class="reas-num">— №1 —</p>
                     <p class="reas-desc">Седона не атракцион для туристов,<br> там течет своя жизнь</p>
                 </div>
                 <div class="col1-2"><img src="img/feature1.jpg" alt="Настоящий городок"></div>
@@ -61,7 +62,7 @@
                 <div class="col1-2"><img src="img/feature2.jpg" alt="Мост дьявола"></div>
                 <div class="col1-1">
                     <p class="reas-title">Там есть мост дьявола</p>
-                    <p class="reas-num">- №2- </p>
+                    <p class="reas-num">— №2— </p>
                     <p class="reas-desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
             </div>
@@ -69,23 +70,23 @@
                 <ul>
                     <li>
                         <p class="feature-title">Небольшая площадь</p>
-                        <p class="feature-num">- №3 -</p>
+                        <p class="feature-num">— №3 —</p>
                         <p class="feature-desc">Все достопремечательности находятся очень близко</p>
                     </li>
                     <li>
                         <p class="feature-title">Красивая дорога</p>
-                        <p class="feature-num">- №4 -</p>
+                        <p class="feature-num">— №4 —</p>
                         <p class="feature-desc">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
                     </li>
                     <li>
                         <p class="feature-title">Мало туристов</p>
-                        <p class="feature-num">- №5- </p>
+                        <p class="feature-num">— №5 — </p>
                         <p class="feature-desc">Большинство едет в Гранд Каньон и толпится там</p>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="holel">
+        <div class="hotel">
             <div class="hotels-preface">
                 <p class="hotel-title">Заинтересовались?</p>
                 <p class="hotel-offer">Укажите предполагаемые даты поездки<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -93,25 +94,26 @@
             <form class="hotel-search-form">
                 <div class="form-title">Поиск гостиницы в Седоне</div>
                 <div class="arg">
-                    <input type="date" name="" id=""><br>
-                    <input type="date" name="" id=""><br>
-                    <input type="number" name="" id="">
-                    <input type="number" name="" id="">
+                    <label for="in">Дата заезда:</label><input type="date" name="" id="in" placeholder="24 апреля 2014"><br>
+                    <label for="out">Дата выезда:</label><input type="date" name="" id="out" placeholder="4 июля 2014"><br>
+                    <label for="adult">Взрослые:</label><input type="number" name="" id="adult">
+                    <label for="child">Дети:</label><input type="number" name="" id="child">
                     <input type="submit" value="Найти">
                 </div>
             </form>
             <div class="map">
-                <img src="img/map.jpg" alt="Карта">
+                <!-- <img src="img/map.jpg" alt="Карта"> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3273.7364522207267!2d-111.79610006763394!3d34.862848913590476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1417310890128" width="1200" height="473" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
-        <footer>
+        <footer class="clearfix">
            <div class="col"><p class="foot-tag">#visitsedona</p></div>
-           <div class="col"><ul class="foot-social">
-                <li><a href="#" class="twitter-icon"></a></li>
-                <li><a href="#" class="fb-icon"></a></li>
-                <li><a href="#" class="youtube-icon"></a></li>
-            </ul></div>
-           <div class="col"><p class="copyright">Website by <a href=""></a> for <a href=""></a></p></div>
+           <div class="col footer-social">
+                <a href="#" class="btn-social twitter-icon"></a>
+                <a href="#" class="btn-social fb-icon"></a>
+                <a href="#" class="btn-social youtube-icon"></a>
+            </div>
+           <div class="col inline"><p class="copyright">Website by <a href="" class="block-copyright glukhanko"></a> for <a href="" class="block-copyright htmlacademy"></a></p></div>
         </footer>
     </div>
 </body>
