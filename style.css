@@ -422,3 +422,32 @@ footer .copyright a.htmlacademy{
     background: url(img/copyright.png) -76px 0 no-repeat;
     vertical-align: middle;
 }
+
+/*    Hotels    */
+
+main{
+    margin-top: 20px;
+}
+
+main .filters .l-left{
+    float: left;
+}
+
+main .sort .sort-filters{
+    float: left;
+}
+
+main .sort .sort-controls{
+    float: right;
+}
+main .filters .l-right{
+    float: right;
+}
+
+.items .item .item-col-left{
+    float: left;
+}
+
+.items .item .item-col-right{
+    float: right;
+}
