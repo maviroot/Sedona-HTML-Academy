@@ -433,6 +433,14 @@ main .filters .l-left{
     float: left;
 }
 
+main .filters .l-left .structure{
+    float: left;
+}
+
+main .filters .l-left .property{
+    float: left;
+}
+
 main .sort .sort-filters{
     float: left;
 }
@@ -440,6 +448,7 @@ main .sort .sort-filters{
 main .sort .sort-controls{
     float: right;
 }
+
 main .filters .l-right{
     float: right;
 }
@@ -450,4 +459,63 @@ main .filters .l-right{
 
 .items .item .item-col-right{
     float: right;
+}
+
+main .filters{
+    background: url(img/hotel_bg.jpg) 50% 50% no-repeat;
+    padding: 30px 71px;
+}
+
+main .filters .structure{
+    margin-right: 100px;
+    position: relative;
+}
+
+main .filters .property{
+    position: relative;
+}
+
+main .filters a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main .filters .filter-title{
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+main .filters ul{
+    list-style: none;
+    text-align: left;
+}
+
+main .filters ul li{
+    margin-top: 26px;
+    margin-left: 38px;
+}
+
+main .filters .structure ul li:before{
+    content: '';
+    border-radius: 5px;
+    background-color: rgb(215, 220, 222);
+    opacity: 0.302;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -1px;
+}
+
+main .filters .property ul li:before{
+    content: '';
+    border-radius: 5px;
+    background-color: rgb(215, 220, 222);
+    opacity: 0.302;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -1px;
 }
