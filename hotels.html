@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sedona - Hotels</title>
+    <link rel="stylesheet" href="normalize.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,17 +24,35 @@
                     <div class="structure">
                         <p class="filter-title">Инфраструктура:</p>
                         <ul>
-                            <li><a href="" class="filter">Бассейн</a></li>
-                            <li><a href="" class="filter">Парковка</a></li>
-                            <li><a href="" class="filter">WI-FI</a></li>
+                            <li>
+                                <input type="checkbox" checked name="pool" id="pool">
+                                <label for="pool">Бассейн</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked name="parking" id="parking">
+                                <label for="parking">Парковка</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="wifi" id="wifi">
+                                <label for="wifi">WI-FI</label>
+                            </li>
                         </ul>
                     </div>
                     <div class="property">
                         <p class="filter-title">Тип жилья:</p>
                         <ul>
-                            <li><a href="" class="filter">Гостиница</a></li>
-                            <li><a href="" class="filter">Мотель</a></li>
-                            <li><a href="" class="filter">Апартаменты</a></li>
+                            <li>
+                                <input type="checkbox" checked name="hotel" id="hotel">
+                                <label for="hotel">Гостиница</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked name="motel" id="motel">
+                                <label for="motel">Мотель</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" checked name="apartments" id="apartments">
+                                <label for="apartments">Апартаменты</label>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -425,10 +425,6 @@ footer .copyright a.htmlacademy{
 
 /*    Hotels    */
 
-main{
-    margin-top: 20px;
-}
-
 main .filters .l-left{
     float: left;
 }
@@ -462,8 +458,9 @@ main .filters .l-right{
 }
 
 main .filters{
+    position: relative;
     background: url(img/hotel_bg.jpg) 50% 50% no-repeat;
-    padding: 30px 71px;
+    padding: 30px 5%;
 }
 
 main .filters .structure{
@@ -498,24 +495,38 @@ main .filters ul li{
     margin-left: 38px;
 }
 
-main .filters .structure ul li:before{
+.filters ul li label{
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"] + label:before{
     content: '';
-    border-radius: 5px;
-    background-color: rgb(215, 220, 222);
-    opacity: 0.302;
+    background: url(img/unchecked.png) 0 0 no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;
     left: -1px;
 }
 
-main .filters .property ul li:before{
-    content: '';
-    border-radius: 5px;
-    background-color: rgb(215, 220, 222);
-    opacity: 0.302;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: -1px;
+input[type="checkbox"]:checked + label:before {
+    background: url(img/checked.png) 0 0 no-repeat;
+}
+
+/*    Sort    */
+
+.sort{
+    padding: 31px 70px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sort .result{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
 }
