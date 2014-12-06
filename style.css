@@ -571,3 +571,21 @@ input[type="checkbox"]:checked + label:before {
     padding: 30px 5%;
     border-bottom: 1px solid #e5e5e5;
 }
+
+.items .item-col-center{
+    padding-left: 31px;
+}
+
+.items .item .item-title{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.items .item .item-desc{
+    padding: 18px 0;
+}
+
+.item .item-btn{
+    float: left;
+}
