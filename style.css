@@ -83,8 +83,22 @@ header .head-nav li{
 .head-nav a:active{
     color: #000;
 }
+
 .head-nav a:active{
     color: #B2B2B2;
+}
+
+.head-nav a.active{
+    color: #766357;
+}
+
+.head-nav a.active:hover{
+    color: #604e43;
+}
+
+.head-nav a.active:active{
+    color: #766357;
+    opacity: 0.3;
 }
 
 /*    Content    */
@@ -302,10 +316,15 @@ header .head-nav li{
     box-sizing: border-box;
     padding: 55px;
     font-weight: bold;
+    text-align: left;
 }
 
 .hotel-search-form label{
     margin-right: 20px;
+}
+
+.hotel-search-form label[for="child"]{
+    margin-left: 75px;
 }
 .hotel-search-form label:nth-child(2n){
     margin-right: 17px;
@@ -324,9 +343,20 @@ header .head-nav li{
     margin-bottom: 0;
 }
 
+.hotel-search-form input{
+    background: #f2f2f2;
+}
+.hotel-search-form input:hover{
+    background: #ebebeb;
+}
+.hotel-search-form input:focus{
+    background: #fff;
+    border: 2px solid #e5e5e5;
+}
+
 .hotel-search-form input[type="date"]{
     box-sizing: border-box;
-    padding: 14px;
+    padding: 0 14px;
     width: 346px;
     height: 38px;
 
@@ -334,8 +364,10 @@ header .head-nav li{
 }
 
 .hotel-search-form input[type="number"]{
+    box-sizing: border-box;
     width: 114px;
     height: 38px;
+    text-align: center;
 }
 
 .hotel-search-form input[type="submit"]{
@@ -349,6 +381,8 @@ header .head-nav li{
     font-size: 21px;
     line-height: 26px;
 }
+
+
 
 .hotel-search-form input[type="submit"]:hover{
     background-color: #669EC0;
@@ -401,6 +435,26 @@ footer .footer-social{
     background: url(img/social-icons.png) -104px 0 no-repeat;
 }
 
+.footer-social a.twitter-icon:hover{
+    background: url(img/social-icons.png) 0 -56px no-repeat;
+}
+.footer-social a.fb-icon:hover{
+    background: url(img/social-icons.png) -52px -56px no-repeat;
+}
+.footer-social a.youtube-icon:hover{
+    background: url(img/social-icons.png) -104px -56px no-repeat;
+}
+
+.footer-social a.twitter-icon:active{
+    background: url(img/social-icons.png) 0 -112px no-repeat;
+}
+.footer-social a.fb-icon:active{
+    background: url(img/social-icons.png) -52px -112px no-repeat;
+}
+.footer-social a.youtube-icon:active{
+    background: url(img/social-icons.png) -104px -112px no-repeat;
+}
+
 footer .copyright{
     padding: 40px;
     line-height: 26px;
@@ -424,6 +478,22 @@ footer .copyright a.htmlacademy{
     vertical-align: middle;
 }
 
+footer .copyright a.glukhanko:hover{
+    background: url(img/copyright.png) 0 -46px no-repeat;
+}
+
+footer .copyright a.htmlacademy:hover{
+    background: url(img/copyright.png) -76px -46px no-repeat;
+}
+
+footer .copyright a.glukhanko:active{
+    background: url(img/copyright.png) 0 -94px no-repeat;
+}
+
+footer .copyright a.htmlacademy:active{
+    background: url(img/copyright.png) -76px -94px no-repeat;
+}
+
 /*    Hotels    */
 
 main .filters .l-left{
@@ -436,6 +506,7 @@ main .filters .l-left .structure{
 
 main .filters .l-left .property{
     float: left;
+    //margin-right: 2%;
 }
 
 main .sort .sort-filters{
@@ -467,7 +538,7 @@ main .filters{
 }
 
 main .filters .structure{
-    margin-right: 100px;
+    margin-right: 50px;
     position: relative;
 }
 
@@ -478,6 +549,10 @@ main .filters .property{
 main .filters a{
     text-decoration: none;
     color: #fff;
+}
+
+main a{
+    text-decoration: none;
 }
 
 main .filters .filter-title{
@@ -553,15 +628,25 @@ input[type="checkbox"]:checked + label:before {
     line-height: 18px;
 }
 
-.sort .sort-solid{
+.sort .sort-active{
     margin-left: 40px;
     color: #81b3d2;
 }
+
 
 .sort .sort-dotted{
     margin-left: 40px;
     color: #b1b1b1;
     border-bottom: 1px dotted #81b3d2;
+}
+
+.sort .sort-dotted:hover{
+    color: #81b3d2;
+}
+
+.sort .sort-dotted:active{
+    color: #000;
+    border-bottom: 0 ;
 }
 
 /*    Item    */
@@ -586,10 +671,12 @@ input[type="checkbox"]:checked + label:before {
     text-align: left;
 }
 
-.items .item .item-title{
+.item-title{
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+    color: #000;
+    text-decoration: none;
 }
 
 .item-title:hover{
@@ -651,8 +738,10 @@ input[type="checkbox"]:checked + label:before {
     background: #766357;
 }
 
-.item .item-col-right .item-rating{
-    margin-top: 40px;
+.item-rating{
+    padding: 5px 13px;
+    margin-top: 35px;
+    background: #f2f2f2;
 }
 
 .range-filter{
