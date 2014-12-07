@@ -1,3 +1,4 @@
+
 /*    General Css    */
 
 html, body, p, div, ul{
@@ -454,7 +455,9 @@ main .filters .l-right{
 }
 
 .items .item .item-col-right{
+    margin-top: 5px;
     float: right;
+    text-align: right;
 }
 
 main .filters{
@@ -521,7 +524,7 @@ input[type="checkbox"]:checked + label:before {
 /*    Sort    */
 
 .sort{
-    padding: 31px 5%;
+    padding: 30px 5%;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -563,17 +566,24 @@ input[type="checkbox"]:checked + label:before {
 
 /*    Item    */
 
+.item .item-col-left{
+    margin-top: 5px;
+    width: 135px;
+    height: 90px;
+    overflow: hidden;
+}
 .item-col-center{
     float: left;
 }
 
 .items .item{
-    padding: 30px 5%;
+    padding: 27px 6.25%; /* для 768 4,16% !!!Как быть?*/
     border-bottom: 1px solid #e5e5e5;
 }
 
 .items .item-col-center{
     padding-left: 31px;
+    text-align: left;
 }
 
 .items .item .item-title{
@@ -582,10 +592,130 @@ input[type="checkbox"]:checked + label:before {
     line-height: 26px;
 }
 
+.item-title:hover{
+    color: #81b3d2;
+}
+
+.item-title:active{
+    color: #b2b2b2;
+}
+
 .items .item .item-desc{
-    padding: 18px 0;
+    padding: 0;
+    padding-top: 9px;
+    padding-bottom: 12px;
+}
+
+.items .item .item-desc span:first-child{
+    margin-right: 35px;
 }
 
 .item .item-btn{
     float: left;
+    box-sizing: border-box;
+    padding: 3px 17px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.item-btn{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-details{
+    background: #81b3d2;
+    margin-right: 6px;
+}
+
+.btn-details:hover{
+    background: #669ec0;
+}
+
+.btn-details:active{
+    background: #5496bd;
+    color: #88b6d1;
+}
+
+.btn-book:hover{
+    background: #604e43;
+}
+
+.btn-book:active{
+    background: #503e33;
+    color: #857871;
+}
+
+.btn-book{
+    background: #766357;
+}
+
+.item .item-col-right .item-rating{
+    margin-top: 40px;
+}
+
+.range-filter{
+    width:320px;
+}
+
+.range-controls{
+    position:relative;
+    //margin-bottom:15px;
+    //padding:0 30px;
+    margin-left: 10px;
+}
+
+.range-controls .scale{
+    margin-top: 45px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar{
+    height: 2px;
+    background-color: #fff;
+}
+
+.range-controls .toggle{
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:8px solid white;
+    background:#ababab;
+    position:absolute;
+    top:-9px;
+    left:-10px;
+    cursor:pointer;
+}
+
+.toggle:hover {
+    background-color: #1C4F80;
+}
+
+.range-controls .max-toggle{
+    left:250px;
+}
+
+.price-controls{
+    color: #fff;
+    border: 2px solid white;
+    width: 99%;
+    padding: 13px 0px;
+}
+.price-controls label:first-child{
+    border-right: 2px solid #FFF;
+    margin-right: 10%;
+    padding-right: 10%;
+}
+
+
+.price-controls input{
+    width: 20%;
+    //padding:15px 0px;
+    text-align: center;
+    border:none;
+    background: none;
+    color: #fff;
 }
