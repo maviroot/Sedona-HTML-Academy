@@ -515,6 +515,53 @@ main .sort .sort-filters{
 
 main .sort .sort-controls{
     float: right;
+    position: relative;
+    margin-top: 8px;
+}
+
+.sort-up{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: url(img/sort-up-down.png) 0 0 no-repeat;
+}
+
+.sort-down{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: url(img/sort-up-down.png) -28px 0 no-repeat;
+    left: 14px;
+}
+
+.sort-up:hover{
+    background: url(img/sort-up-down.png) 0 -12px no-repeat;
+}
+
+.sort-down:hover{
+    background: url(img/sort-up-down.png) -28px -12px no-repeat;
+}
+
+.sort-up:active{
+    background: url(img/sort-up-down.png) 0 -24px no-repeat;
+}
+
+.sort-down:active{
+    background: url(img/sort-up-down.png) -28px -24px no-repeat;
+}
+
+.sort-up.active{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: url(img/sort-up-down.png) 0 -24px no-repeat;
+}
+
+.sort-down.active{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: url(img/sort-up-down.png) -28px -24px no-repeat;
 }
 
 main .filters .l-right{
@@ -585,7 +632,7 @@ input[type="checkbox"]{
 
 input[type="checkbox"] + label:before{
     content: '';
-    background: url(img/unchecked.png) 0 0 no-repeat;
+    background: url(img/checkbox.png) 0 0 no-repeat;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -593,7 +640,23 @@ input[type="checkbox"] + label:before{
 }
 
 input[type="checkbox"]:checked + label:before {
-    background: url(img/checked.png) 0 0 no-repeat;
+    background: url(img/checkbox.png) -31px 0 no-repeat;
+}
+
+input[type="checkbox"] + label:hover:before{
+    background: url(img/checkbox.png) 0 -31px no-repeat;
+}
+
+input[type="checkbox"]:checked + label:hover:before {
+    background: url(img/checkbox.png) -31px -31px no-repeat;
+}
+
+input[type="checkbox"] + label:active:before{
+    background: url(img/checkbox.png) 0 -61px no-repeat;
+}
+
+input[type="checkbox"]:checked + label:active:before {
+    background: url(img/checkbox.png) -31px -61px no-repeat;
 }
 
 /*    Sort    */
