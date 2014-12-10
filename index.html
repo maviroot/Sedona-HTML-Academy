@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Седона - Главная страница</title>
 	<!-- <base href="http://barbershop-borodinski.ru/suppes/sedona/"> -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -96,8 +97,12 @@
                 <div class="arg">
                     <label for="in">Дата заезда:</label><input type="date" name="" id="in" placeholder="24 апреля 2014"><br>
                     <label for="out">Дата выезда:</label><input type="date" name="" id="out" placeholder="4 июля 2014"><br>
-                    <label for="adult">Взрослые:</label><input type="number" name="" id="adult">
-                    <label for="child">Дети:</label><input type="number" name="" id="child">
+                    <div class="adults half">
+                        <label for="adult">Взрослые:</label><input type="" name="" id="adult" value="2">
+                    </div>
+                    <div class="childs half">
+                        <label for="child">Дети:</label><input type="" name="" id="child" value="0">
+                    </div>
                     <input type="submit" value="Найти">
                 </div>
             </form>

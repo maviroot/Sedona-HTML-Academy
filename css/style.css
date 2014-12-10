@@ -3,14 +3,12 @@
 
 html, body, p, div, ul{
     margin: 0;
-
     padding: 0;
 }
 
 body{
     background: #f2f2f2;
     text-transform: uppercase;
-
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
     line-height: 21px;
@@ -19,7 +17,6 @@ body{
 .wrapper{
     margin: 0 auto;
     padding: 0;
-
     min-width: 768px;
     max-width: 1200px;
     background: #fff;
@@ -30,14 +27,12 @@ body{
 .wrapper:after {
     display: table;
     clear: both;
-
     content: '';
 }
 
 .clearfix:after {
     display: table;
     clear: both;
-
     content: "";
 }
 
@@ -46,15 +41,13 @@ body{
 header{
     position: relative;
     z-index: 10;
-    height: 56px;
-
+    //height: 56px;
     background: #fff;
 }
 
 header .head-nav{
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -106,8 +99,7 @@ header .head-nav li{
 .intro{
     position: relative;
     padding: 65px 0;
-
-    background: url("img/cont-bg.jpg") 0 0 no-repeat;
+    background: url("../img/cont-bg.jpg") 0 0 no-repeat;
     background-size: cover;
 }
 
@@ -118,9 +110,8 @@ header .head-nav li{
     display: table;
     width: 100.1%;
     height: 57px;
-    background: url("img/image-white2.png") 0 100% no-repeat;
+    background: url("../img/image-white2.png") 0 100% no-repeat;
     background-size: contain;
-
     content: "";
 }
 
@@ -132,21 +123,18 @@ header .head-nav li{
 .welcome-sign-dash{
     margin: auto;
     margin-top: 10px;
-
     width: 256px;
 }
 
 .wel-title{
     margin: auto;
     margin-top: 50px;
-
     width: 458px;
 }
 
 .wel-because{
     margin: auto;
     margin-top: 55px;
-
     width: 296px;
 }
 
@@ -158,27 +146,23 @@ header .head-nav li{
 .sedona-merit{
     margin-bottom: 35px;
     text-align: center;
-
     font-weight: bold;
     font-size: 21px;
 }
 
 .reason{
     height: 256px;
-
     color: #fff;
 }
 
 .col1-1{
     float: left;
-
     width: 33.333%;
 }
 
 .col1-2{
     float: left;
     overflow: hidden;
-
     width: 66.666%;
     height: 256px;
 }
@@ -194,7 +178,6 @@ header .head-nav li{
 
 .col1-1 .reas-title{
     font-weight: bold;
-
     font-size: 21px;
     line-height: 26px;
 }
@@ -244,7 +227,6 @@ header .head-nav li{
 
 .more-res ul li{
     float: left;
-
     box-sizing: border-box;
     padding: 50px 70px;
     width: 33.333%;
@@ -252,7 +234,6 @@ header .head-nav li{
 
 .more-res .feature-title{
     margin-bottom: 15px;
-
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -276,25 +257,24 @@ header .head-nav li{
 
 .hotels-preface .hotel-title{
     text-align: center;
-
     font-weight: bold;
     font-size: 30px;
     line-height: 26px;
 }
 
 .hotels-preface .hotel-offer{
+    margin-top: 35px;
     line-height: 24px;
 }
 
 .map{
     overflow: hidden;
-
     height: 473px;
 }
 
 .hotel-search-form{
     position: absolute;
-    top: 173px;
+    top: 208px;
     left: 50%;
     margin-left: -285px;
     width: 568px;
@@ -315,17 +295,14 @@ header .head-nav li{
 .hotel-search-form .arg{
     box-sizing: border-box;
     padding: 55px;
-    font-weight: bold;
     text-align: left;
+    font-weight: bold;
 }
 
 .hotel-search-form label{
     margin-right: 20px;
 }
 
-.hotel-search-form label[for="child"]{
-    margin-left: 75px;
-}
 .hotel-search-form label:nth-child(2n){
     margin-right: 17px;
 }
@@ -336,7 +313,6 @@ header .head-nav li{
     background: #f2f2f2;
     text-transform: uppercase;
     font-weight: bold;
-
     font-family: 'PT Sans', sans-serif;
 }
 .hotel-search-form input:last-child{
@@ -350,8 +326,8 @@ header .head-nav li{
     background: #ebebeb;
 }
 .hotel-search-form input:focus{
-    background: #fff;
     border: 2px solid #e5e5e5;
+    background: #fff;
 }
 
 .hotel-search-form input[type="date"]{
@@ -363,18 +339,78 @@ header .head-nav li{
     //display: block;
 }
 
-.hotel-search-form input[type="number"]{
+.hotel-search-form input[type=""]{
+    position: relative;
     box-sizing: border-box;
+    margin-left: 20px;
     width: 114px;
     height: 38px;
     text-align: center;
+}
+
+.childs{
+    margin-left: 35px;
+}
+
+.half{
+    position: relative;
+    display: inline-block;
+
+    //width: 49%;
+}
+
+/*.hotel-search-form input[type=""]:before{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: url(img/sort-up-down.png) 0 0 no-repeat;
+}*/
+
+.hotel-search-form .half:before {
+    position: absolute;
+    top: 40%;
+    right: 90px;
+    z-index: 200;
+    width: 12px;
+    height: 12px;
+    background: url('../img/sedona-sprite.png') no-repeat -235px -84px;
+    content: "";
+    opacity: 1;
+}
+
+.hotel-search-form .half:after {
+    position: absolute;
+    top: 40%;
+    right: 14px;
+    width: 12px;
+    height: 12px;
+    background: url('../img/sedona-sprite.png') no-repeat -260px -84px;
+    content: "";
+}
+
+.hotel-search-form .half:hover:before {
+    background: url('../img/sedona-sprite.png') no-repeat -235px -99px;
+}
+
+.hotel-search-form .half:hover:after {
+    background: url('../img/sedona-sprite.png') no-repeat -260px -99px;
+}
+
+.hotel-search-form .half:active:before {
+    background: url('../img/sedona-sprite.png') no-repeat -235px -114px;
+}
+
+.hotel-search-form .half:active:after {
+    background: url('../img/sedona-sprite.png') no-repeat -260px -114px;
 }
 
 .hotel-search-form input[type="submit"]{
     display: block;
     box-sizing: border-box;
     margin: auto;
-    padding: 20px 197px;
+    margin-top: 40px;
+    padding: 15px 197px;
     border: 0px;
     background: #81b3d2;
     color: #fff;
@@ -394,13 +430,8 @@ header .head-nav li{
 }
 /*    Footer    */
 
-footer{
-    //vertical-align: center;
-}
-
 footer .col{
     float: left;
-
     width: 33%;
 
     //display: inline-block;
@@ -409,7 +440,6 @@ footer .col{
 footer .foot-tag{
     padding-top: 50px;
     font-weight: bold;
-
     font-size: 21px;
     line-height: 26px;
 }
@@ -426,37 +456,38 @@ footer .footer-social{
 }
 
 .footer-social a.twitter-icon{
-    background: url(img/social-icons.png) 0 0 no-repeat;
+    background: url(../img/social-icons.png) 0 0 no-repeat;
 }
 .footer-social a.fb-icon{
-    background: url(img/social-icons.png) -52px 0 no-repeat;
+    background: url(../img/social-icons.png) -52px 0 no-repeat;
 }
 .footer-social a.youtube-icon{
-    background: url(img/social-icons.png) -104px 0 no-repeat;
+    background: url(../img/social-icons.png) -104px 0 no-repeat;
 }
 
 .footer-social a.twitter-icon:hover{
-    background: url(img/social-icons.png) 0 -56px no-repeat;
+    background: url(../img/social-icons.png) 0 -56px no-repeat;
 }
 .footer-social a.fb-icon:hover{
-    background: url(img/social-icons.png) -52px -56px no-repeat;
+    background: url(../img/social-icons.png) -52px -56px no-repeat;
 }
 .footer-social a.youtube-icon:hover{
-    background: url(img/social-icons.png) -104px -56px no-repeat;
+    background: url(../img/social-icons.png) -104px -56px no-repeat;
 }
 
 .footer-social a.twitter-icon:active{
-    background: url(img/social-icons.png) 0 -112px no-repeat;
+    background: url(../img/social-icons.png) 0 -112px no-repeat;
 }
 .footer-social a.fb-icon:active{
-    background: url(img/social-icons.png) -52px -112px no-repeat;
+    background: url(../img/social-icons.png) -52px -112px no-repeat;
 }
 .footer-social a.youtube-icon:active{
-    background: url(img/social-icons.png) -104px -112px no-repeat;
+    background: url(../img/social-icons.png) -104px -112px no-repeat;
 }
 
 footer .copyright{
     padding: 40px;
+    padding-left: 6%;
     line-height: 26px;
 }
 a.block-copyright{
@@ -466,7 +497,7 @@ footer .copyright a.glukhanko{
     display: inline-block;
     width: 27px;
     height: 30px;
-    background: url(img/copyright.png) 0 0 no-repeat;
+    background: url(../img/copyright.png) 0 0 no-repeat;
     vertical-align: middle;
 }
 
@@ -474,24 +505,24 @@ footer .copyright a.htmlacademy{
     display: inline-block;
     width: 27px;
     height: 33px;
-    background: url(img/copyright.png) -76px 0 no-repeat;
+    background: url(../img/copyright.png) -76px 0 no-repeat;
     vertical-align: middle;
 }
 
 footer .copyright a.glukhanko:hover{
-    background: url(img/copyright.png) 0 -46px no-repeat;
+    background: url(../img/copyright.png) 0 -46px no-repeat;
 }
 
 footer .copyright a.htmlacademy:hover{
-    background: url(img/copyright.png) -76px -46px no-repeat;
+    background: url(../img/copyright.png) -76px -46px no-repeat;
 }
 
 footer .copyright a.glukhanko:active{
-    background: url(img/copyright.png) 0 -94px no-repeat;
+    background: url(../img/copyright.png) 0 -94px no-repeat;
 }
 
 footer .copyright a.htmlacademy:active{
-    background: url(img/copyright.png) -76px -94px no-repeat;
+    background: url(../img/copyright.png) -76px -94px no-repeat;
 }
 
 /*    Hotels    */
@@ -506,6 +537,7 @@ main .filters .l-left .structure{
 
 main .filters .l-left .property{
     float: left;
+
     //margin-right: 2%;
 }
 
@@ -514,8 +546,8 @@ main .sort .sort-filters{
 }
 
 main .sort .sort-controls{
-    float: right;
     position: relative;
+    float: right;
     margin-top: 8px;
 }
 
@@ -523,45 +555,45 @@ main .sort .sort-controls{
     position: absolute;
     width: 9px;
     height: 9px;
-    background: url(img/sort-up-down.png) 0 0 no-repeat;
+    background: url(../img/sort-up-down.png) 0 0 no-repeat;
 }
 
 .sort-down{
     position: absolute;
+    left: 14px;
     width: 9px;
     height: 9px;
-    background: url(img/sort-up-down.png) -28px 0 no-repeat;
-    left: 14px;
+    background: url(../img/sort-up-down.png) -28px 0 no-repeat;
 }
 
 .sort-up:hover{
-    background: url(img/sort-up-down.png) 0 -12px no-repeat;
+    background: url(../img/sort-up-down.png) 0 -12px no-repeat;
 }
 
 .sort-down:hover{
-    background: url(img/sort-up-down.png) -28px -12px no-repeat;
+    background: url(../img/sort-up-down.png) -28px -12px no-repeat;
 }
 
 .sort-up:active{
-    background: url(img/sort-up-down.png) 0 -24px no-repeat;
+    background: url(../img/sort-up-down.png) 0 -24px no-repeat;
 }
 
 .sort-down:active{
-    background: url(img/sort-up-down.png) -28px -24px no-repeat;
+    background: url(../img/sort-up-down.png) -28px -24px no-repeat;
 }
 
 .sort-up.active{
     position: absolute;
     width: 9px;
     height: 9px;
-    background: url(img/sort-up-down.png) 0 -24px no-repeat;
+    background: url(../img/sort-up-down.png) 0 -24px no-repeat;
 }
 
 .sort-down.active{
     position: absolute;
     width: 9px;
     height: 9px;
-    background: url(img/sort-up-down.png) -28px -24px no-repeat;
+    background: url(../img/sort-up-down.png) -28px -24px no-repeat;
 }
 
 main .filters .l-right{
@@ -573,20 +605,20 @@ main .filters .l-right{
 }
 
 .items .item .item-col-right{
-    margin-top: 5px;
     float: right;
+    margin-top: 5px;
     text-align: right;
 }
 
 main .filters{
     position: relative;
-    background: url(img/hotel_bg.jpg) 50% 50% no-repeat;
     padding: 30px 5%;
+    background: url(../img/hotel_bg.jpg) 50% 50% no-repeat;
 }
 
 main .filters .structure{
-    margin-right: 50px;
     position: relative;
+    margin-right: 50px;
 }
 
 main .filters .property{
@@ -594,8 +626,8 @@ main .filters .property{
 }
 
 main .filters a{
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
 
 main a{
@@ -603,11 +635,11 @@ main a{
 }
 
 main .filters .filter-title{
-    font-weight: bold;
-    color: #fff;
-    font-size: 16px;
     margin-bottom: 30px;
+    color: #fff;
     text-align: left;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 main .filters ul{
@@ -631,32 +663,32 @@ input[type="checkbox"]{
 }
 
 input[type="checkbox"] + label:before{
-    content: '';
-    background: url(img/checkbox.png) 0 0 no-repeat;
-    width: 20px;
-    height: 20px;
     position: absolute;
     left: -1px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/checkbox.png) 0 0 no-repeat;
+    content: '';
 }
 
 input[type="checkbox"]:checked + label:before {
-    background: url(img/checkbox.png) -31px 0 no-repeat;
+    background: url(../img/checkbox.png) -31px 0 no-repeat;
 }
 
 input[type="checkbox"] + label:hover:before{
-    background: url(img/checkbox.png) 0 -31px no-repeat;
+    background: url(../img/checkbox.png) 0 -31px no-repeat;
 }
 
 input[type="checkbox"]:checked + label:hover:before {
-    background: url(img/checkbox.png) -31px -31px no-repeat;
+    background: url(../img/checkbox.png) -31px -31px no-repeat;
 }
 
 input[type="checkbox"] + label:active:before{
-    background: url(img/checkbox.png) 0 -61px no-repeat;
+    background: url(../img/checkbox.png) 0 -61px no-repeat;
 }
 
 input[type="checkbox"]:checked + label:active:before {
-    background: url(img/checkbox.png) -31px -61px no-repeat;
+    background: url(../img/checkbox.png) -31px -61px no-repeat;
 }
 
 /*    Sort    */
@@ -667,19 +699,19 @@ input[type="checkbox"]:checked + label:active:before {
 }
 
 .sort .result{
+    float: left;
     margin: 0;
     padding: 0;
+    padding-right: 48px;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    padding-right: 48px;
-    float: left;
 }
 
 .sort .sort-filters ul{
-    list-style: none;
     float: left;
     padding-top: 8px;
+    list-style: none;
 }
 
 .sort .sort-filters ul li{
@@ -699,8 +731,8 @@ input[type="checkbox"]:checked + label:active:before {
 
 .sort .sort-dotted{
     margin-left: 40px;
-    color: #b1b1b1;
     border-bottom: 1px dotted #81b3d2;
+    color: #b1b1b1;
 }
 
 .sort .sort-dotted:hover{
@@ -708,17 +740,17 @@ input[type="checkbox"]:checked + label:active:before {
 }
 
 .sort .sort-dotted:active{
-    color: #000;
     border-bottom: 0 ;
+    color: #000;
 }
 
 /*    Item    */
 
 .item .item-col-left{
+    overflow: hidden;
     margin-top: 5px;
     width: 135px;
     height: 90px;
-    overflow: hidden;
 }
 .item-col-center{
     float: left;
@@ -735,11 +767,11 @@ input[type="checkbox"]:checked + label:active:before {
 }
 
 .item-title{
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
     color: #000;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
 }
 
 .item-title:hover{
@@ -770,13 +802,13 @@ input[type="checkbox"]:checked + label:active:before {
 
 .item-btn{
     display: block;
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
 
 .btn-details{
-    background: #81b3d2;
     margin-right: 6px;
+    background: #81b3d2;
 }
 
 .btn-details:hover{
@@ -802,8 +834,8 @@ input[type="checkbox"]:checked + label:active:before {
 }
 
 .item-rating{
-    padding: 5px 13px;
     margin-top: 35px;
+    padding: 5px 13px;
     background: #f2f2f2;
 }
 
@@ -813,9 +845,10 @@ input[type="checkbox"]:checked + label:active:before {
 
 .range-controls{
     position:relative;
+    margin-left: 10px;
+
     //margin-bottom:15px;
     //padding:0 30px;
-    margin-left: 10px;
 }
 
 .range-controls .scale{
@@ -830,15 +863,15 @@ input[type="checkbox"]:checked + label:active:before {
 }
 
 .range-controls .toggle{
-    box-sizing: border-box;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border:8px solid white;
-    background:#ababab;
     position:absolute;
     top:-9px;
     left:-10px;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    border:8px solid white;
+    border-radius: 50%;
+    background:#ababab;
     cursor:pointer;
 }
 
@@ -851,23 +884,24 @@ input[type="checkbox"]:checked + label:active:before {
 }
 
 .price-controls{
-    color: #fff;
-    border: 2px solid white;
-    width: 99%;
     padding: 13px 0px;
+    width: 99%;
+    border: 2px solid white;
+    color: #fff;
 }
 .price-controls label:first-child{
-    border-right: 2px solid #FFF;
     margin-right: 10%;
     padding-right: 10%;
+    border-right: 2px solid #FFF;
 }
 
 
 .price-controls input{
     width: 20%;
-    //padding:15px 0px;
-    text-align: center;
     border:none;
     background: none;
     color: #fff;
+    text-align: center;
+
+    //padding:15px 0px;
 }
