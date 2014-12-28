@@ -1,7 +1,7 @@
 
 /*    General Css    */
 
-html, body, p, div, ul{
+html, body, p, div, ul, h2{
     margin: 0;
     padding: 0;
 }
@@ -22,12 +22,6 @@ body{
     background: #fff;
     box-shadow: 0 0 10px 0 #c8c8c8;
     text-align: center;
-}
-
-.wrapper:after {
-    display: table;
-    clear: both;
-    content: '';
 }
 
 .clearfix:after {
@@ -67,6 +61,7 @@ header .head-nav li{
 
 .main-logo a{
     padding: 0;
+    margin: 0px 0 -20px 0;
 }
 
 .head-nav a:hover{
@@ -93,7 +88,6 @@ header .head-nav li{
     color: #766357;
     opacity: 0.3;
 }
-
 /*    Content    */
 
 .intro{
@@ -190,7 +184,8 @@ header .head-nav li{
 }
 
 .features{
-    height: 330px;
+    //height: 330px;
+    
 }
 
 .features ul{
@@ -201,8 +196,8 @@ header .head-nav li{
     float: left;
     box-sizing: border-box;
     padding: 0 50px;
-    padding-top: 55px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 66px;
     width: 33.333%;
     height: 100%;
 }
@@ -274,7 +269,7 @@ header .head-nav li{
 
 .hotel-search-form{
     position: absolute;
-    top: 208px;
+    bottom: 93px;
     left: 50%;
     margin-left: -285px;
     width: 568px;
@@ -444,45 +439,9 @@ footer .foot-tag{
     line-height: 26px;
 }
 
-footer .btn-social{
-    display: inline-block;
-    width: 46px;
-    height: 48px;
- }
-
 footer .footer-social{
     margin-top: 37px;
     margin-bottom: 36px;
-}
-
-.footer-social a.twitter-icon{
-    background: url(../img/social-icons.png) 0 0 no-repeat;
-}
-.footer-social a.fb-icon{
-    background: url(../img/social-icons.png) -52px 0 no-repeat;
-}
-.footer-social a.youtube-icon{
-    background: url(../img/social-icons.png) -104px 0 no-repeat;
-}
-
-.footer-social a.twitter-icon:hover{
-    background: url(../img/social-icons.png) 0 -56px no-repeat;
-}
-.footer-social a.fb-icon:hover{
-    background: url(../img/social-icons.png) -52px -56px no-repeat;
-}
-.footer-social a.youtube-icon:hover{
-    background: url(../img/social-icons.png) -104px -56px no-repeat;
-}
-
-.footer-social a.twitter-icon:active{
-    background: url(../img/social-icons.png) 0 -112px no-repeat;
-}
-.footer-social a.fb-icon:active{
-    background: url(../img/social-icons.png) -52px -112px no-repeat;
-}
-.footer-social a.youtube-icon:active{
-    background: url(../img/social-icons.png) -104px -112px no-repeat;
 }
 
 footer .copyright{
@@ -523,6 +482,24 @@ footer .copyright a.glukhanko:active{
 
 footer .copyright a.htmlacademy:active{
     background: url(../img/copyright.png) -76px -94px no-repeat;
+}
+
+footer .footer-social .fa{
+    box-sizing: border-box;
+    width: 46px;
+    height: 48px;
+    padding: 17px 14px;
+    background: #81b3d2;
+    color: white;
+}
+
+footer .footer-social .fa:hover{
+    background: #669ec0;
+}
+
+footer .footer-social .fa:active{
+    background: #5496bd;
+    color: #88b6d1;
 }
 
 /*    Hotels    */
@@ -798,12 +775,7 @@ input[type="checkbox"]:checked + label:active:before {
     padding: 3px 17px;
     color: #fff;
     font-weight: bold;
-}
-
-.item-btn{
     display: block;
-    color: #fff;
-    text-decoration: none;
 }
 
 .btn-details{
