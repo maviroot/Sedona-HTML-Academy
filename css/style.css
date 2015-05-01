@@ -191,6 +191,7 @@ header .head-nav li{
 
 .features{
     height: 330px;
+    padding-bottom: 50px;
 }
 
 .features ul{
@@ -202,7 +203,7 @@ header .head-nav li{
     box-sizing: border-box;
     padding: 0 50px;
     padding-top: 55px;
-    padding-bottom: 50px;
+    //padding-bottom: 50px;
     width: 33.333%;
     height: 100%;
 }
@@ -242,7 +243,7 @@ header .head-nav li{
     //padding-right: 70px;
 }
 
-.more-res .feature-desc{
+e.more-res .feature-desc{
     margin-top: 25px;
 }
 
